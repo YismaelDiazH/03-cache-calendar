@@ -1,0 +1,18 @@
+#calendar {
+    border: 2px solid #e6f0e6;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fcfdfc;
+}
+
+/* Sobrescribir colores de fullcalendar para que coincidan con el tema */
+:root {
+    --fc-border-color: #d4e8d4;
+    --fc-today-bg-color: #e6f0e6;
+    --fc-button-bg-color: #4caf50;
+    --fc-button-border-color: #4caf50;
+    --fc-button-hover-bg-color: #388e3c;
+    --fc-button-hover-border-color: #388e3c;
+    --fc-button-active-bg-color: #388e3c;
+    --fc-button-active-border-color: #388e3c;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CacheFirst - Calendario</title>
+    <link rel="stylesheet" href="./Estilos.css">
+    
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    
+    <link rel="stylesheet" href="./css/calendar.css">
+
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4caf50">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon-180x180.png" sizes="180x180">
+
+    </head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./CalendarPage.html" class="active">Calendario</a>
+            <a href="./FormPage.html">Formulario</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Página de Calendario con FullCalendar</h1>
+            <p>Esta página carga <code>fullcalendar.js</code> y su CSS desde un CDN. La primera vez que la visites, se guardarán en el caché dinámico y estarán disponibles sin conexión.</p>
+            
+            <div id='calendar'></div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+    
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    
+    <script src="./js/calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CacheFirst - Inicio</title>
+    <link rel="stylesheet" href="./Estilos.css">
+
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4caf50">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon-180x180.png" sizes="180x180">
+
+    </head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="active">Inicio</a>
+            <a href="./CalendarPage.html">Calendario</a>
+            <a href="./FormPage.html">Formulario</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Estrategia: Cache First, Network Fallback</h1>
+            <p>Este es un ejemplo de la estrategia "Primero Caché, Recurso de Red".</p>
+            <ul>
+                <li>Los archivos principales (HTML, `Estilos.css`, `main.js`) se guardan en el <strong>App Shell</strong> al instalar el Service Worker.</li>
+                <li>Al navegar a "Calendario" o "Formulario", sus archivos `.js` y `.css` (locales y de CDNs) se solicitan.</li>
+                <li>El Service Worker los buscará primero en el caché.</li>
+                <li>Si no los encuentra (cache miss), los buscará en la red, los guardará en un caché <strong>dinámico</strong> y luego los entregará.</li>
+                <li>La próxima vez que visites esas páginas (incluso sin conexión), los archivos se cargarán instantáneamente desde el caché.</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

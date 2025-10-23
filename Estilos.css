@@ -1,0 +1,70 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4; /* Verde muy pálido */
+    color: #333;
+}
+
+header {
+    background-color: #e6f0e6; /* Verde pastel claro */
+    border-bottom: 1px solid #c8dcc8; /* Verde pastel medio */
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #395239; /* Verde oscuro para texto */
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #d4e8d4;
+}
+
+nav a.active {
+    color: #2e7d32; /* Verde más fuerte */
+    background-color: #d4e8d4;
+    font-weight: 700;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d4e8d4;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+}
+
+h1 {
+    color: #2e7d32; /* Verde fuerte */
+    border-bottom: 2px solid #e6f0e6;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+ul {
+    line-height: 1.6;
+}
+
+code {
+    background-color: #e6f0e6;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: "Courier New", Courier, monospace;
+    color: #388e3c;
+}

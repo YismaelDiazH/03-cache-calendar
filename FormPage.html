@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CacheFirst - Formulario</title>
+    <link rel="stylesheet" href="./Estilos.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="./css/form.css">
+
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4caf50">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon-180x180.png" sizes="180x180">
+
+    </head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./CalendarPage.html">Calendario</a>
+            <a href="./FormPage.html" class="active">Formulario</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Página de Formulario con Select2</h1>
+            <p>Este formulario usa <code>select2.js</code> desde un CDN para mejorar los 'select'. Se guardará en el caché dinámico para funcionar offline.</p>
+            
+            <form id="sampleForm">
+                <div class="form-group">
+                    <label for="num1">Pregunta 1 (Número):</label>
+                    <input type="number" id="num1" name="num1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="countrySelect">Pregunta 2 (Selección):</label>
+                    <select id="countrySelect" style="width: 100%;">
+                      <option value="MX">México</option>
+                      <option value="US">Estados Unidos</option>
+                      <option value="CA">Canadá</option>
+                      <option value="ES">España</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="num3">Pregunta 3 (Número):</label>
+                    <input type="number" id="num3" name="num3" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-message"></p>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <script src="./js/form.js"></script>
+</body>
+</html>
